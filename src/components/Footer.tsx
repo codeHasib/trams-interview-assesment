@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
       y: 0,
       transition: { duration: 0.6, ease: "easeOut" },
     },
-  };
+  } as const;
 
   return (
     <footer className="relative w-full bg-[#E2F0D9]/40 overflow-x-hidden pt-20 pb-8 px-4 sm:px-6 lg:px-8">

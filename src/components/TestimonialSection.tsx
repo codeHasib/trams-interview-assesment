@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const TestimonialSection = () => {
@@ -65,7 +64,7 @@ const TestimonialSection = () => {
       y: 0,
       transition: { duration: 0.6, ease: "easeOut" },
     },
-  };
+  } as const;
 
   return (
     <section className="relative w-full bg-white overflow-x-hidden py-16 md:py-28 px-4 sm:px-6 lg:px-8">

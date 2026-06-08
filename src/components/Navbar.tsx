@@ -1,36 +1,35 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { title: 'Home', href: '#' },
-    { title: 'Studio', href: '#' },
-    { title: 'Services', href: '#' },
-    { title: 'Contact', href: '#' },
-    { title: 'FAQs', href: '#' },
+    { title: "Home", href: "#" },
+    { title: "Studio", href: "#" },
+    { title: "Services", href: "#" },
+    { title: "Contact", href: "#" },
+    { title: "FAQs", href: "#" },
   ];
 
   // Framer Motion variants for the mobile menu drop-down
   const menuVariants = {
     hidden: { opacity: 0, y: -20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.2, ease: 'easeOut' }
+      transition: { duration: 0.2, ease: "easeOut" },
     },
-    exit: { 
-      opacity: 0, 
+    exit: {
+      opacity: 0,
       y: -20,
-      transition: { duration: 0.15, ease: 'easeIn' }
-    }
-  };
+      transition: { duration: 0.15, ease: "easeIn" },
+    },
+  } as const;
 
   return (
     <nav className="w-full bg-white border-b border-neutral-100 text-neutral-900 z-999 sticky top-0 left-0">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        
         {/* Logo / Brand Name */}
         <div className="text-xl font-medium tracking-tight select-none">
           Elementum
@@ -39,9 +38,9 @@ const Navbar = () => {
         {/* Desktop Navigation Links (Hidden on mobile/tablet) */}
         <div className="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide text-neutral-600">
           {navLinks.map((link) => (
-            <a 
-              key={link.title} 
-              href={link.href} 
+            <a
+              key={link.title}
+              href={link.href}
               className="hover:text-black transition-colors duration-200"
             >
               {link.title}

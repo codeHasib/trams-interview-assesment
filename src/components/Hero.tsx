@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const FixedHero = () => {
@@ -52,7 +51,7 @@ const FixedHero = () => {
       opacity: 1,
       y: 0,
       transition: { duration: 0.6, ease: "easeOut" },
-    },
+    } as const,
   };
 
   return (
