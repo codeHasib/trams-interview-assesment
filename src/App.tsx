@@ -1,5 +1,6 @@
 import FixedHero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import ServicesList from "./components/ServiceList";
 import SplitFeatures from "./components/SplitFeatures";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <FixedHero />
       {/* Split Features */}
       <SplitFeatures />
+      {/* Services List */}
+      <ServicesList />
     </>
   );
 }
