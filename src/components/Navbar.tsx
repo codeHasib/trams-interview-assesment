@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative w-full bg-white border-b border-neutral-100 text-neutral-900 z-50">
+    <nav className="w-full bg-white border-b border-neutral-100 text-neutral-900 z-999 sticky top-0 left-0">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
         {/* Logo / Brand Name */}

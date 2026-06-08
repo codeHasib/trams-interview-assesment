@@ -2,6 +2,7 @@ import FixedHero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ServicesList from "./components/ServiceList";
 import SplitFeatures from "./components/SplitFeatures";
+import TestimonialSection from "./components/TestimonialSection";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <SplitFeatures />
       {/* Services List */}
       <ServicesList />
+      {/* Testimonial Section */}
+      <TestimonialSection />
     </>
   );
 }
