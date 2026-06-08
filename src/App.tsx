@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import FixedHero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ServicesList from "./components/ServiceList";
@@ -17,6 +18,8 @@ function App() {
       <ServicesList />
       {/* Testimonial Section */}
       <TestimonialSection />
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

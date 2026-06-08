@@ -1,5 +1,10 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 
 * {
-  font-family: "Inter", "ui-sans-serif", "system-ui", "sans-serif";
+  font-family: "Gerbil";
+  src: url("/fonts/gerbil.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
