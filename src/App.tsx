@@ -1,3 +1,4 @@
+import FixedHero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -5,6 +6,8 @@ function App() {
     <>
       {/* Navbar */}
       <Navbar />
+      {/* Hero */}
+      <FixedHero />
     </>
   );
 }
